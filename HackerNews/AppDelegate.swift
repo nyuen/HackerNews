@@ -7,6 +7,10 @@
 //
 
 import UIKit
+import MobileCenter
+import MobileCenterAnalytics
+import MobileCenterCrashes
+import MobileCenterDistribute
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -21,8 +25,23 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
   
   func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
     configureUI()
+    MSMobileCenter.start("288cea35-bef6-4ea0-978e-9cce93eca4b9", withServices:[
+      MSAnalytics.self,
+      MSCrashes.self,
+      MSDistribute.self
+      ])
+    MSAnalytics.trackEvent("My application launched", withProperties: ["Category" : "start"])
     return true
   }
+  
+  func application(_ application: UIApplication, open url: URL, sourceApplication: String?, annotation: Any) -> Bool {
+    
+    // Pass the URL to MSDistribute.
+    MSDistribute.open(url as URL!)
+    return true
+  }
+  
+  
   
   // MARK: Functions
   

@@ -270,7 +270,7 @@
 				TargetAttributes = {
 					D74A0352193DA4F500F01247 = {
 						CreatedOnToolsVersion = 6.0;
-						DevelopmentTeam = P229S7564Q;
+						DevelopmentTeam = NBAKGK6TCD;
 						LastSwiftMigration = 0800;
 					};
 					D74A0364193DA4F600F01247 = {
@@ -617,6 +617,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COMPRESS_PNG_FILES = YES;
+				DEVELOPMENT_TEAM = NBAKGK6TCD;
 				INFOPLIST_FILE = HackerNews/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -638,6 +639,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COMPRESS_PNG_FILES = YES;
+				DEVELOPMENT_TEAM = NBAKGK6TCD;
 				INFOPLIST_FILE = HackerNews/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
